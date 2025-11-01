@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nossa História — Letícia & João</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --sky:#87c5ff;--cloud:#ffffff;--brand-yellow:#ffd300;--brand-red:#e53935;--brand-blue:#3b6cff;--ink:#1b1b1b;--card:#ffffff;--shadow:0 6px 18px rgba(0,0,0,.08);--radius:20px;--maxw:980px;
+    }
+    body{
+      margin:0;color:var(--ink);font-family:Inter,system-ui;
+      background:
+        radial-gradient(circle at 20% 30%,var(--cloud)14px,transparent 15px),
+        radial-gradient(circle at 60% 20%,var(--cloud)12px,transparent 13px),
+        radial-gradient(circle at 80% 40%,var(--cloud)10px,transparent 11px),
+        radial-gradient(circle at 30% 70%,var(--cloud)16px,transparent 17px),
+        radial-gradient(circle at 75% 75%,var(--cloud)14px,transparent 15px),
+        linear-gradient(var(--sky),var(--sky));
+      background-size:220px 220px,200px 200px,180px 180px,240px 240px,220px 220px,100% 100%;background-attachment:fixed;
+    }
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:clamp(14px,2vw,24px);}
+    header{text-align:center;margin:10px auto 18px;padding:18px 10px;}
+    .title{font-family:Bangers,Inter;letter-spacing:1px;font-size:clamp(28px,6vw,52px);color:var(--brand-blue);text-shadow:2px 2px 0 var(--brand-yellow),4px 4px 0 var(--brand-red);margin:0 0 4px;}
+    .subtitle{font-weight:600;font-size:clamp(14px,3.3vw,18px);opacity:.9;}
+    .timeline{position:relative;display:grid;gap:16px;}
+    .timeline::before{content:"";position:absolute;inset:0;width:4px;background:linear-gradient(180deg,var(--brand-yellow),var(--brand-red));left:50%;transform:translateX(-50%);border-radius:999px;opacity:.25;}
+    .moment{display:grid;align-items:center;gap:12px;position:relative;}
+    .moment::before{content:"";position:absolute;top:22px;left:50%;transform:translate(-50%,-50%);width:14px;height:14px;background:var(--brand-blue);border:3px solid var(--brand-yellow);border-radius:50%;box-shadow:var(--shadow);}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;}
+    .card img{width:100%;display:block;height:auto;aspect-ratio:4/3;object-fit:cover;}
+    .meta{padding:10px 14px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+    .date{font-weight:600;font-size:13px;background:var(--brand-yellow);padding:4px 8px;border-radius:999px;}
+    .tag{font-size:12px;opacity:.75;}
+    .text{padding:0 14px 14px;line-height:1.5;font-size:clamp(14px,3.8vw,16px);}
+    @media(min-width:390px){.moment{grid-template-columns:minmax(0,1fr)28px minmax(0,1fr);} .left{grid-template-areas:"media dot copy";} .right{grid-template-areas:"copy dot media";} .dot{grid-area:dot;} .media{grid-area:media;} .copy{grid-area:copy;} .moment::before{top:50%;}}
+    @media(min-width:640px){.card img{aspect-ratio:3/2;}}
+    footer{max-width:var(--maxw);margin:40px auto;padding:20px;text-align:center;background:rgba(255,255,255,0.9);border-radius:20px;box-shadow:var(--shadow);}
+    footer p{font-size:clamp(15px,4vw,17px);line-height:1.6;margin:8px 0;color:#333;}
+    footer strong{color:var(--brand-red);font-weight:700;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1 class="title">Nossa História</h1>
+      <p class="subtitle">Letícia & João — 19 momentos que viraram mundo</p>
+    </header>
+
+    <main class="timeline">
+      <!-- 19 imagens -->
+      
+      <!-- 01 -->
+      <section class="moment left"><div class="media card"><img src="/IMGS/1.jpg"><div class="meta"><span class="date">02/08/2025</span><span class="tag">Primeira foto juntos</span></div><div class="text">Nosso começo leve, sem pressa, já parecia coisa escrita nas estrelas.</div></div></section>
+      <!-- 02 -->
+      <section class="moment right"><div class="media card"><img src="/IMGS/2.jpg"><div class="meta"><span class="date">03/08/2025</span><span class="tag"></span></div><div class="text">As zueiras que sempre faço.</div></div></section>
+      <!-- 03 -->
+      <section class="moment left"><div class="media card"><img src="/IMGS/3.jpg"><div class="meta"><span class="date"></span><span class="tag"></span></div><div class="text">Nosso primeiro date.</div></div></section>
+      <!-- 04 -->
+      <section class="moment right"><div class="media card"><img src="/IMGS/4.jpg"><div class="meta"><span class="date"></span><span class="tag"></span></div><div class="text">Primeira foto que tiramos viajando.</div></div></section>
+      <!-- 05 -->
+      <section class="moment left"><div class="media card"><img src="/IMGS/5.jpg"><div class="meta"><span class="date"></span><span class="tag"></span></div><div class="text">outra kkkkk.</div></div></section>
+      <!-- 06 -->
+      <section class="moment right"><div class="media card"><img src="/IMGS/6.jpg"><div class="meta"><span class="date"></span><span class="tag"></span></div><div class="text">A foto que mandou para colocar como plano de fundo (está até hoje).</div></div></section>
+      <!-- 07 -->
+      <section class="moment left"><div class="media card"><img src="/IMGS/7.jpg"><div class="meta"><span class="date"></span><span class="tag"></span></div><div class="text">convenci vc tirar uma foto com um cavalo kkkkk.</div></div></section>
+      <!-- 08 -->
+      <section class="moment right"><div class="media card"><img src="/IMGS/8.jpg"><div class="meta"><span class="date"></span><span class="tag"></span></div><div class="text">A foto está cortada mas é nois dois juntos com um leitão.</div></div></section>
+      <!-- 09 -->
+      <section class="moment left"><div class="media card"><img src="/IMGS/9.jpg"><div class="meta"><span class="date"></span><span class="tag"></span></div><div class="text">A foto que tirou quando pegou meu celular na festa do crespi.</div></div></section>
+      <!-- 10 -->
+      <section class="moment right"><div class="media card"><img src="/IMGS/10.jpg"><div class="meta"><span class="date"></span><span class="tag"></span></div><div class="text">A nossa melhor foto hoje.</div></div></section>
+      <!-- 11 -->
+      <section class="moment left"><div class="media card"><img src="/IMGS/11.jpg"><div class="meta"><span class="date"></span><span class="tag"></span></div><div class="text">Os abraços que tanto gosto.</div></div></section>
+      <!-- 12 -->
+      <section class="moment right"><div class="media card"><img src="/IMGS/12.jpg"><div class="meta"><span class="date"></span><span class="tag"></span></div><div class="text">Os beijos tbm.</div></div></section>
+      <!-- 13 -->
+      <section class="moment left"><div class="media card"><img src="/IMGS/13.jpg"><div class="meta"><span class="date"></span><span class="tag"></span></div><div class="text">A orquídea que montamos.</div></div></section>
+      <!-- 14 -->
+      <section class="moment right"><div class="media card"><img src="/IMGS/14.jpg"><div class="meta"><span class="date"></span><span class="tag"></span></div><div class="text">Nosso segundo date que foi maravilhoso.</div></div></section>
+      <!-- 15 -->
+      <section class="moment left"><div class="media card"><img src="/IMGS/15.jpg"><div class="meta"><span class="date"></span><span class="tag"></span></div><div class="text">Mais beijinhos.</div></div></section>
+      <!-- 16 -->
+      <section class="moment right"><div class="media card"><img src="/IMGS/16.jpg"><div class="meta"><span class="date"></span><span class="tag"></span></div><div class="text">Aqui foi dps de vc almoçar com meus pais.</div></div></section>
+      <!-- 17 -->
+      <section class="moment left"><div class="media card"><img src="/IMGS/17.jpg"><div class="meta"><span class="date"></span><span class="tag"></span></div><div class="text">e por fim nossa ultima foto que está um pouco comica .</div></div></section>
+    </main>
+
+    <footer>
+      <p><strong>Letícia</strong></p>
+      <p>Hoje a gente completa 3 meses que mais parecem anos, pelo amor que sentimos um pelo outro e pela maneira leve e simples que nos tratamos. Não sei como, mas você conseguiu despertar lados meus que eu nem conhecia — como ficar totalmente despreparado pra uma conversa ou travar só por te olhar.</p>
+      <p>Você floresce o melhor em mim. E quero sempre estar com você, planejando nossas vidas, porque com você tudo parece tão real. Às vezes penso que só pode ser coisa do universo — como se a gente fosse um projeto dele.</p>
+      <p>Com o tempo, percebo que preciso cada vez mais e mais de você, <strong>Letícia Catão</strong>. Seu cheiro, seu jeito, sua voz, já são parte da minha rotina, essenciais mesmo.</p>
+      <p>E hoje vai ser um dia muito importante pra mim, porque é o nosso dia, dia 2. E eu quero torná-lo ainda mais especial.</p>
+
+      
+    </footer>
+  </div>
+</body>
+</html>
